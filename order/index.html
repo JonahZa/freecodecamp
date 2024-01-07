@@ -1,1 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
 
+	<head>  
+		<title>Tesla Orders</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="styles.css">
+		<script src="https://kit.fontawesome.com/82fb4064e8.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		<h1 id="title">Tesla Orders<h1>
+		<p class="size-top" id="description">Order your very own Tesla!</p>
+
+
+		<!--The whole survey form-->
+		<form id="survey-form">
+			<fieldset class="question">
+				<legend class="size-top padding">Order Form:</legend>
+				<p class="size-bottom">Information we need:<p>
+				<label class="size-bottom" id="name-label">Name:</label>
+				<input id="name" type="text" placeholder="Your name" required/>
+				
+				
+				<br>
+				<label class="size-bottom" id="email-label"> Email:</label>
+				<input id="email" type="email" placeholder="Your email" required/>
+
+
+				<br>
+				<label class="size-bottom" id="number-label">Age:</label>
+				<input id="number" type="number" min="13" max="120" placeholder="Age" />
+				
+
+				<br>
+				<br>
+
+
+				<!--Model dropdown-->
+				<label class="size-bottom">What Model?</label>
+				<div class="dropdown">
+					<select name="dropdown" id="dropdown">
+						<option>Please choose one:</option>
+						<option>Model S</option>
+						<option>Model X</option>
+						<option>Model 3</option>  
+						<option>Model Y</option>
+						<option>Cybertruck</option>
+					</select>
+				</div>
+				
+				<!--Color choice-->
+				<div class="border">
+					<input type="radio" id="white" name="color" checked value="white">
+					<label for="white" class="size-bottom">White</label>
+
+					<input type="radio" id="red" name="color" unchecked value="red">
+					<label for="red" class="size-bottom">Red</label>
+
+					<input type="radio" id="blue" name="color" unchecked value="blue">
+					<label for="blue" class="size-bottom">Blue</label>
+
+					<input type="radio" id="grey" name="color" unchecked value="grey">
+					<label for="grey" class="size-bottom">Grey</label>
+				</div>
+
+
+				<br>
+				<br>
+
+
+				<div class="border">
+					<center class="size-bottom">Any upgrades?</center>
+
+					<input type="checkbox" id="tires" name="tires" value="tires">
+					<label for="tires" class="size-bottom">Sport Tires</label>
+
+					<input type="checkbox" id="battery-upgrade" name="battery-upgrade" value="battery-upgrade">
+					<label for="battery-upgrade" class="size-bottom">Upgraded battery</label>
+				</div>
+
+				<!--Comments box-->
+				<div style="margin-top: 20px;" class="comments">
+				<label class="size-bottom" for="comments">Comments?</label>
+				<textarea name="comments" cols="17" rows="2" placeholder="Any comments?" class="comments-text"></textarea>
+				</div>
+
+
+				<br>
+				<br>
+
+				<!--Submit button-->
+				<input type="submit" id="submit" value="Submit">
+
+			</fieldset>
+		</form>
+
+		<br>
+
+		<!--Tesla Model S photo-->
+		<img src="https://tesla-cdn.thron.com/delivery/public/image/tesla/35d15221-0a5f-4dce-b484-a4db67b81dd2/bvlatuR/std/0x0/model-s@2x" alt="Tesla model S">
+
+
+	</body>
+
+	<!--Footer with shameless plugs (links)-->
+	<footer class="size-bottom">
+		Created in 2024 by JZ <br>
+		<p class="disclaimer">I do not own any trademarks or rights to anything Tesla related on this page, <br>
+		this is merely a practice project from <a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a>.</p>
+		<p>My GitHub: <a href="https://github.com/JonahZa" target="_blank"><i class="fa fa-github"></i></a></p>
+		<p>My freeCodeCamp profile: <a href="https://www.freecodecamp.org/JonahZ" target="_blank"><i class="fa-brands fa-free-code-camp"></i></a></p> 
+
+	</footer>
+</html>  
